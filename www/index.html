@@ -5,6 +5,8 @@
 		<script src="js/pgb.js"></script>
 		<script src="cordova.js"></script>
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/Mytheme.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
         <link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -13,19 +15,98 @@
 		
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
+            
+            <div data-role="panel" id="mypanel">
+                <a href="#pagetwo" class="link">The game</a>
+                <a href="#pagetwo" class="link">Malibu Pop</a>
+                <a href="#pagefour" class="link">Blue Peach</a>
+            </div><!-- /panel -->
+            
 		  <div data-role="header">
-			<h1>GUI</h1>
+			<a href="#mypanel" class="iconpad ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-left"></a>
+            <h1>Drinks</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p>The graphical user interface (GUI), is a type of user interface that allows users to interact with electronic
-            devices through graphical icons and visual indicators such as secondary notation, instead of text-based user
-            interfaces, typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep
-            learning curve of command-line interfaces (CLIs), which require commands to be typed on a computer
-            keyboard.</p>
+             
 		  </div>
 		  <div data-role="footer" data-position="fixed">
-			<h1>Mateusz Salawa</h1>
+			<h1>(c)Mateusz Salawa</h1>
 		  </div> 
 		</div> 	
+        
+        
+        <div data-role="page" id="pagetwo">
+		  <div data-role="header">
+              <a href="#pageone" class="iconpad ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left"></a>
+			<h1>The Game</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+              <a href="#img1" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img  class="imgp" src="img/4.jpg"></a>
+               
+            <div data-role="popup" id="img1" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="img/4.jpg" alt="Photo landscape">
+                </div>
+              
+            <h2> Składniki:</h2>
+               <p> biały rum (30 ml)<br>
+                likier triple sec (15 ml)<br>
+                sok żurawinowy (60 ml)<br>
+                kostki lodu</p>
+            <h2>Sposób przygotowania:</h2>
+             <p>  Szklankę typu highball wypełnij kostkami lodu i wlej do niej biały rum. Dodaj sok żurawinowy. Na koniec wlej likier triple sec i podaj.</p> 
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c)Mateusz Salawa</h1>
+		  </div> 
+		</div> 	
+        
+         <div data-role="page" id="pagethree">
+		  <div data-role="header">
+              <a href="#pageone" class="iconpad ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left"></a>
+			<h1>Malibu Pop</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+                <a href="#img1" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img  class="imgp" src="img/5.jpg"></a>
+               
+            <div data-role="popup" id="img1" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="img/5.jpg" alt="Photo landscape">
+                </div>
+            <h2> Składniki:</h2>
+               <p> Malibu rum (30 ml)<br>
+                likier blue curacao (30 ml)<br>
+                sok ananasowy (około 3-5 ml)<br>
+                sok żurawinowy (około 3-5 ml)<br>
+                kostki lodu</p>
+            <h2>Sposób przygotowania:</h2>
+             <p>  Malibu rum i likier blue curacao mieszamy razem ze sobą w shakerze. Do szklanki typu highball dodajemy kostki lodu. Przelewamy do niej zawartość shakera i dodajemy soki.</p> 
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c)Mateusz Salawa</h1>
+		  </div> 
+		</div> 	
+        
+        <div data-role="page" id="pagefour">
+		  <div data-role="header">
+              <a href="#pageone" class="iconpad ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left"></a>
+			<h1>Blue Peach</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+                <a href="#img1" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img  class="imgp" src="img/6.jpg"></a>
+               
+            <div data-role="popup" id="img1" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="img/6.jpg" alt="Photo landscape">
+                </div>
+            <h2> Składniki:</h2>
+               <p> schnapps brzoskwiniowy (30 ml)<br>
+                likier blue curacao (15 ml)<br>
+                kostki lodu</p>
+            <h2>Sposób przygotowania:</h2>
+             <p>  Do shakera wrzucamy kostki lodu. Wlewamy schnapps brzoskwiniowy i likier blue curacao. Dobrze mieszamy i przelewamy do kieliszków.</p> 
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>(c)Mateusz Salawa</h1>
+		  </div> 
+		</div> 	
+        
 	</body>
 </html>
